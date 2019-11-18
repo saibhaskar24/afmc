@@ -11,7 +11,7 @@
 
     <ion-list>
 
-      <div>
+       
       <h1>a) STI screening should start with following three questions regardless of clinical presentation   </h1>
       <ion-input>Gender: I am a Male/female</ion-input>
       <ion-input>Age: I am x years old</ion-input>
@@ -57,9 +57,9 @@
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
       </ion--radio-group>
-    </div>
+     
       
-    <div>
+     
       <h1>Sexual history to ascertain risk of getting STI: No risk/Low risk/High risk  </h1>
       <ion--radio-group>
           <ion-list-header>
@@ -176,24 +176,25 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
+      </ion--radio-group>   
+    <ion-radio-group>
       <ion-list-header>
           <ion-label>History of Recent overseas travel </ion-label>
         </ion-list-header>
     
         <ion-item>
           <ion-label>Yes</ion-label>
-          <ion-radio slot="start" value="biff"></ion-radio>
+          <ion-radio slot="start" value="yes"></ion-radio>
         </ion-item>
     
         <ion-item>
           <ion-label>No</ion-label>
-          <ion-radio slot="start" value="griff"></ion-radio>
+          <ion-radio slot="start" value="no"></ion-radio>
         </ion-item>
       </ion-radio-group>
-    </div>
+     
 
-    <div>
+     
         <h1>History related to symptoms</h1>
         <ion--radio-group>
             <ion-list-header>
@@ -377,9 +378,9 @@
             <ion-radio slot="start" value="griff"></ion-radio>
           </ion-item>
         </ion-radio-group>
-      </div>
+       
 
-    <div>
+     
       <h1>Ulcer related questions (1ab follow up). Ulcer is a wound or break in the continuity of skin or mucous membrane.        </h1>
         <ion--radio-group>
             <ion-list-header>
@@ -424,9 +425,9 @@
               </ion-item>
         </ion--radio-group>
 
-    </div>
+     
 
-    <div>
+     
         <h1>Photo quiz for ulcer          </h1>
         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
@@ -450,7 +451,7 @@
         
           </ion-radio-group>  
   
-      </div>
+       
 
           <ion-button expand="block">Submit</ion-button>
 
