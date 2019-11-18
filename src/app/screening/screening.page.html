@@ -15,7 +15,7 @@
       <h1>a) STI screening should start with following three questions regardless of clinical presentation   </h1>
       <ion-input>Gender: I am a Male/female</ion-input>
       <ion-input>Age: I am x years old</ion-input>
-      <ion--radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>1aa. Do you have any genital discharge? </ion-label>
             </ion-list-header>
@@ -28,8 +28,8 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>1 ab. Do you have any ulcer/ulcers on external genitalia ?   </ion-label>
             </ion-list-header>
@@ -42,8 +42,8 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>1 ac. Has/have your partner(s) been treated for an STI in the last 8 weeks?   </ion-label>
             </ion-list-header>
@@ -56,12 +56,12 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
+      </ion-radio-group>
      
       
      
       <h1>Sexual history to ascertain risk of getting STI: No risk/Low risk/High risk  </h1>
-      <ion--radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>Are you Sexually active   </ion-label>
             </ion-list-header>
@@ -74,8 +74,8 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>Recent sexual history: I had-  -  - -   tick the correct option  </ion-label>
             </ion-list-header>
@@ -92,8 +92,8 @@
                 <ion-label>Intercourse with Multiple partners</ion-label>
                 <ion-radio slot="start" value="3"></ion-radio>
               </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>Sexual orientation - type of sexual activity  </ion-label>
             </ion-list-header>
@@ -115,8 +115,8 @@
                 <ion-label>sex</ion-label>
                 <ion-radio slot="start" value="4"></ion-radio>
               </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>the possibility of pregnancy (females), </ion-label>
             </ion-list-header>
@@ -129,8 +129,8 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>use of contraceptives </ion-label>
             </ion-list-header>
@@ -147,8 +147,8 @@
                 <ion-label>others</ion-label>
                 <ion-radio slot="start" value="3"></ion-radio>
               </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>1 ac. Has/have your partner(s) been treated for an STI in the last 8 weeks?   </ion-label>
             </ion-list-header>
@@ -161,8 +161,8 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>
-      <ion--radio-group>
+      </ion-radio-group>
+       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>recent antibiotic history and drug allergy</ion-label>
             </ion-list-header>
@@ -176,7 +176,7 @@
               <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
-      </ion--radio-group>   
+      </ion-radio-group>   
     <ion-radio-group>
       <ion-list-header>
           <ion-label>History of Recent overseas travel </ion-label>
@@ -196,7 +196,7 @@
 
      
         <h1>History related to symptoms</h1>
-        <ion--radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>a. Do you have Pain or burning while passing urine  ?</ion-label>
               </ion-list-header>
@@ -209,8 +209,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>b. Do you have an increased frequency of urination ?                </ion-label>
               </ion-list-header>
@@ -223,8 +223,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>c. Are you having fever ?                  </ion-label>
               </ion-list-header>
@@ -237,8 +237,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>d. Do you feel weak since onset of symptoms ?                  </ion-label>
               </ion-list-header>
@@ -251,7 +251,7 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
+        </ion-radio-group>
         <ion-radio-group>
         <ion-list-header>
             <ion-label>e. Is there any discharge from urethra ? Pus at the site of flow of urine              </ion-label>
@@ -268,7 +268,7 @@
           </ion-item>
         </ion-radio-group>
 
-        <ion--radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>f. How much is the quantity of discharge in a day ? </ion-label>
               </ion-list-header>
@@ -281,7 +281,7 @@
                 <ion-label>Copius discharge soiling the undergarments</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
+        </ion-radio-group>
         <ion-radio-group>
         <ion-list-header>
             <ion-label>g. What is the type of discharge ?        </ion-label>
@@ -307,7 +307,7 @@
         </ion-radio-group>
 
 
-        <ion--radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>h. Is the discharge foul smelling ? (Fishy smell)                  </ion-label>
               </ion-list-header>
@@ -320,8 +320,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>i. Do you have vaginal itching            </ion-label>
               </ion-list-header>
@@ -334,8 +334,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>j. Do you have a backache      </ion-label>
               </ion-list-header>
@@ -348,8 +348,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>k. Do you have pain in abdomen ?                  </ion-label>
               </ion-list-header>
@@ -362,7 +362,7 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
+        </ion-radio-group>
         <ion-radio-group>
         <ion-list-header>
             <ion-label>l. Does your partner has similar kind of discharge       </ion-label>
@@ -382,7 +382,7 @@
 
      
       <h1>Ulcer related questions (1ab follow up). Ulcer is a wound or break in the continuity of skin or mucous membrane.        </h1>
-        <ion--radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>a. Is it painful ?                  </ion-label>
               </ion-list-header>
@@ -395,8 +395,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>b. Is it single ulcer ?           </ion-label>
               </ion-list-header>
@@ -409,8 +409,8 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
-        <ion--radio-group>
+        </ion-radio-group>
+         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
                 <ion-label>c. Are they multiple ulcer ?              </ion-label>
               </ion-list-header>
@@ -423,7 +423,7 @@
                 <ion-label>No</ion-label>
                 <ion-radio slot="start" value="no"></ion-radio>
               </ion-item>
-        </ion--radio-group>
+        </ion-radio-group>
 
      
 
