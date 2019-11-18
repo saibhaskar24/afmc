@@ -10,6 +10,52 @@
 <ion-content>
 
     <ion-list>
+      <h1>a) STI screening should start with following three questions regardless of clinical presentation   </h1>
+      <ion-input>Gender: I am a Male/female</ion-input>
+      <ion-input>Age: I am x years old</ion-input>
+      <ion--radio-group>
+          <ion-list-header>
+              <ion-label>1aa. Do you have any genital discharge? </ion-label>
+            </ion-list-header>
+          <ion-item>
+              <ion-label>Yes</ion-label>
+              <ion-radio slot="start" value="yes"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio slot="start" value="no"></ion-radio>
+            </ion-item>
+      </ion--radio-group>
+      <ion--radio-group>
+          <ion-list-header>
+              <ion-label>1 ab. Do you have any ulcer/ulcers on external genitalia ?   </ion-label>
+            </ion-list-header>
+          <ion-item>
+              <ion-label>Yes</ion-label>
+              <ion-radio slot="start" value="yes"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio slot="start" value="no"></ion-radio>
+            </ion-item>
+      </ion--radio-group>
+      <ion--radio-group>
+          <ion-list-header>
+              <ion-label>1 ac. Has/have your partner(s) been treated for an STI in the last 8 weeks?   </ion-label>
+            </ion-list-header>
+          <ion-item>
+              <ion-label>Yes</ion-label>
+              <ion-radio slot="start" value="yes"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio slot="start" value="no"></ion-radio>
+            </ion-item>
+      </ion--radio-group>
+
         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
             <ion-list-header>
               <ion-label>Question 1</ion-label>
