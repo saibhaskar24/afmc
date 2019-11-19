@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./screening.page.scss'],
 })
 export class ScreeningPage  {
+  name;
+  age;
   public q1: string;
   public a1: string;
 public a2: string;

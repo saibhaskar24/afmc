@@ -13,8 +13,8 @@
 
        
       <h1>a) STI screening should start with following three questions regardless of clinical presentation   </h1>
-      <ion-input>Gender: I am a Male/female</ion-input>
-      <ion-input>Age: I am x years old</ion-input>
+      <ion-input [(ngModel)]"name" >Gender: I am a Male/female</ion-input>
+      <ion-input [(ngModel)]"age">Age: I am x years old</ion-input>
        <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
               <ion-label>1aa. Do you have any genital discharge? </ion-label>
@@ -453,7 +453,7 @@
   
        
 
-          <ion-button expand="block">Submit</ion-button>
+          <ion-button expand="block" (click)="submit()">Submit</ion-button>
 
     </ion-list>
 
