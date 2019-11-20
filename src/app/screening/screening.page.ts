@@ -101,11 +101,42 @@ public e: string;
   dd3(event) {this.d3 = event.target.value; } //c
   ee(event) {this.e = event.target.value; } 
   submit() {
-    var result:string[] = new Array(3) ;
+    if(this.g)     result[i++] = "Gender : "+"Male";
+    else      result[i++] = "Gender : "+"Female";
+    result[i++] = "Age : "+this.age;
+
+
     var i=0;
+    if(this.aaa1)     {
+      var result:string[] = new Array(4) ;
+    if(this.c7=="1" ) result[i++] = " A clear and watery discharge is perfectly normal";
+    if(this.c7=="2" ) result[i++] = " Clear and stretchy(mucoid) discharge indicates that you are likely ovulating";
+    if(this.c7=="3" ) result[i++] = " Thick white/curdy discharge of cottage cheese-like consistency accompanied with itching indicates yeast/candida infection";
+    if(this.c7=="4" ) result[i++] = " Thick yellowish to greenish foul smelling bubbly/frothy discharge indicates trichomoniasis";
     if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") result[i++] = "UTI";
-    if(this.c5=="1" ) result[i++] = "gonorrhoea";
-    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";
+    if(this.c5=="1" && (this.c6=="1" || this.c6=="0")) result[i++] = "gonorrhoea";
+    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";}
+
+    if(this.bbb1) {
+      var result:string[] = new Array(3) ;
+      result[i++]=" Common causes of Genital Ulcer: treponema pallidum, H. ducreyi, Herpes Simplex infection";
+      if(this.d1=="0") {
+        result[i++]=" Painless ulcer is seen in syphilis ";
+      }
+      else {
+        result[i++]=" Painful ulcer is seen in chancroid        ";
+        if(this.d3=="1") {
+          result[i++]=" Painful multiple pin point ulcers indicates Herpes infection   ";
+        }
+      }
+    }
+
+    if(this.ccc1) {
+      var result:string[] = new Array(2) ;
+      if(this.e=="1")  result[i++]=" a. syphilitic ulcer   ";
+      if(this.e=="2")  result[i++]=" b. chancroid  ";
+      if(this.e=="3")  result[i++]=" c. Herpetic ulcer      ";          
+    }
     this.presentModal(result);
   }
 
