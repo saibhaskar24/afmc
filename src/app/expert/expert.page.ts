@@ -6,22 +6,8 @@ import { AlertController } from '@ionic/angular';
   templateUrl: './expert.page.html',
   styleUrls: ['./expert.page.scss'],
 })
-export class ExpertPage implements OnInit {
+export class ExpertPage {
 
   constructor(public alertcontroller: AlertController) { }
-
-  async presentAlert() {
-    const alert = await this.alertcontroller.create({
-      header: 'Result',
-      subHeader: 'Based on your options result is',
-      message:'gfgjh',
-      buttons:['OK']
-    });
-    await alert.present();
-  }
-
-  ngOnInit() {
-    this.presentAlert();
-  }
 
 }
