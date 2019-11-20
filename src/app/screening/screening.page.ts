@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ShowPage } from './../show/show.page';
+import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-screening',
@@ -44,7 +46,14 @@ public d3: string;
 public e: string;
 
 
-  constructor() { }
+  constructor(public modalC:ModalController) { }
+
+  async presentModal() {
+    const modal = await this.modalC.create({
+      component: ShowPage
+    });
+     await modal.present();
+  }
 
   aa1(event) {this.a1 = event.target.value; if(this.a1=="1") this.g=true; else this.g=false;} //gender
   aa2(event) {this.a3 = event.target.value; } //yes
@@ -81,7 +90,7 @@ public e: string;
     if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") {alert("UTI");}
     if(this.c5=="1" ) {alert("gonorrhoea");}
     if(this.c10=="1" && this.c11=="1") {alert("pelvic inflammatory disease");}
-    
+    this.presentModal();
   }
 
 }
