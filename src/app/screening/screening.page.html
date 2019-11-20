@@ -27,7 +27,7 @@
             <ion-radio slot="start" value="2"></ion-radio>
           </ion-item>
       </ion-radio-group>
-      <ion-input [(ngModel)]="age" placeholder="Enter Age">AGE : </ion-input>
+      <ion-input type="number" [(ngModel)]="age" placeholder="Enter Age">AGE : </ion-input>
        <ion-radio-group  (ionChange)="aa2($event)" >
           <ion-list-header>
               <ion-label>1aa. Do you have any genital discharge? </ion-label>
@@ -70,8 +70,8 @@
               <ion-radio slot="start" value="0"></ion-radio>
             </ion-item>
       </ion-radio-group>
-      <ion-button expand="block" (click)="next()">Next</ion-button>
-     
+        <ion-button expand="block" (click)="next()" color="medium">Next</ion-button>
+      
       
      <div  *ngIf="aa">
       <h1>Sexual history to ascertain risk of getting STI: No risk/Low risk/High risk  </h1>
