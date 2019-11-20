@@ -47,9 +47,9 @@ public e: string;
   constructor() { }
 
   aa1(event) {this.a1 = event.target.value; if(this.a1=="1") this.g=true; else this.g=false;} //gender
-  aa3(event) {this.a3 = event.target.value; } //yes
-  aa4(event) {this.a4 = event.target.value; } //.
-  aa5(event) {this.a5 = event.target.value; } //.[1,0]
+  aa2(event) {this.a3 = event.target.value; } //yes
+  aa3(event) {this.a4 = event.target.value; } //.
+  aa4(event) {this.a5 = event.target.value; } //.[1,0]
   next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false;  alert("Thanks you dont have any problems");} }
 
   bb1(event) {this.b1 = event.target.value; if(this.b1=="1") {this.bb11=true;} else {alert("Low risk of STD"); this.bb11=false;} } 
