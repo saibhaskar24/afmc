@@ -41,19 +41,17 @@ public c12: string;
 public d1: string;
 public d2: string;
 public d3: string;
+public e: string;
+
 
   constructor() { }
 
-handler(event) {this.q1 = event.target.value; }
-  goFish(event) {
-    console.log('hello ', event.target.value);
-  }
   aa1(event) {this.a1 = event.target.value; if(this.a1=="1") this.g=true; else this.g=false;} //gender
   aa3(event) {this.a3 = event.target.value; } //yes
   aa4(event) {this.a4 = event.target.value; } //.
   aa5(event) {this.a5 = event.target.value; } //.[1,0]
   next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false;  alert("Thanks you dont have any problems");} }
-  
+
   bb1(event) {this.b1 = event.target.value; if(this.b1=="1") {this.bb11=true;} else {alert("Low risk of STD"); this.bb11=false;} } 
   bb2(event) {this.b2 = event.target.value; if(this.b2=="1") { alert("Low risk of STD");} else {alert("High risk of STD"); }} 
   bb3(event) {this.b3 = event.target.value; } //record
@@ -61,6 +59,7 @@ handler(event) {this.q1 = event.target.value; }
   bb5(event) {this.b5 = event.target.value; if(this.b5=="2") {alert("low risk of STD");} } //con
   bb6(event) {this.b6 = event.target.value; if(this.b6=="1"){this.bby6=true; }} //yes->input
   bb7(event) {this.b7 = event.target.value; if(this.b7=="1"){ alert("High risk"); }} //sea
+
   cc1(event) {this.c1 = event.target.value; } //a -> yes reponse for a,b only with or without c,d,j,k indicates UTI
   cc2(event) {this.c2 = event.target.value; } //b -> yes response to e with any response to f indicates gonorrhoea 
   cc3(event) {this.c3 = event.target.value; } //c -> yes response to j and k indicates pelvic inflammatory disease
@@ -73,11 +72,16 @@ handler(event) {this.q1 = event.target.value; }
   cc10(event) {this.c10 = event.target.value; } //j
   cc11(event) {this.c11 = event.target.value; } //k
   cc12(event) {this.c12 = event.target.value; } //l
-  dd1(event) {this.d1 = event.target.value; }
-  dd2(event) {this.d2 = event.target.value; }
-  dd3(event) {this.d3 = event.target.value; }
+
+  dd1(event) {this.d1 = event.target.value; } //a
+  dd2(event) {this.d2 = event.target.value; } //b
+  dd3(event) {this.d3 = event.target.value; } //c
+  ee(event) {this.e = event.target.value; } 
   submit() {
-    alert(this.age);
+    if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") {alert("UTI");}
+    if(this.c5=="1" ) {alert("gonorrhoea");}
+    if(this.c10=="1" && this.c11=="1") {alert("pelvic inflammatory disease");}
+    
   }
 
 }
