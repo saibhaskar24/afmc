@@ -101,6 +101,7 @@ public e: string;
   dd3(event) {this.d3 = event.target.value; } //c
   ee(event) {this.e = event.target.value; } 
   submit() {
+    var result:string[] = new Array(9) ;
     if(this.g)     result[i++] = "Gender : "+"Male";
     else      result[i++] = "Gender : "+"Female";
     result[i++] = "Age : "+this.age;
@@ -114,7 +115,6 @@ public e: string;
 
     var i=0;
     if(this.aaa1)     {
-      var result:string[] = new Array(4) ;
     if(this.c7=="1" ) result[i++] = " A clear and watery discharge is perfectly normal";
     if(this.c7=="2" ) result[i++] = " Clear and stretchy(mucoid) discharge indicates that you are likely ovulating";
     if(this.c7=="3" ) result[i++] = " Thick white/curdy discharge of cottage cheese-like consistency accompanied with itching indicates yeast/candida infection";
@@ -124,7 +124,6 @@ public e: string;
     if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";}
 
     if(this.bbb1) {
-      var result:string[] = new Array(3) ;
       result[i++]=" Common causes of Genital Ulcer: treponema pallidum, H. ducreyi, Herpes Simplex infection";
       if(this.d1=="0") {
         result[i++]=" Painless ulcer is seen in syphilis ";
@@ -138,7 +137,6 @@ public e: string;
     }
 
     if(this.ccc1) {
-      var result:string[] = new Array(2) ;
       if(this.e=="1")  result[i++]=" a. syphilitic ulcer   ";
       if(this.e=="2")  result[i++]=" b. chancroid  ";
       if(this.e=="3")  result[i++]=" c. Herpetic ulcer      ";          
