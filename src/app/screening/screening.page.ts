@@ -71,5 +71,8 @@ handler(event) {this.q1 = event.target.value; }
   dd1(event) {this.d1 = event.target.value; }
   dd2(event) {this.d2 = event.target.value; }
   dd3(event) {this.d3 = event.target.value; }
+  submit() {
+    alert(this.name);
+  }
 
 }
