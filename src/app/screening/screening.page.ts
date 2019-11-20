@@ -8,7 +8,6 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./screening.page.scss'],
 })
 export class ScreeningPage  {
-  public result: string;
   age;
   antibiotic;
   public q1: string;
@@ -89,11 +88,12 @@ public e: string;
   dd3(event) {this.d3 = event.target.value; } //c
   ee(event) {this.e = event.target.value; } 
   submit() {
-    this.result="";
-    if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") this.result = "UTI\n";
-    if(this.c5=="1" ) this.result += "gonorrhoea\n";
-    if(this.c10=="1" && this.c11=="1") this.result+="pelvic inflammatory disease\n";
-    this.presentModal(this.result);
+    var result:string[] = new Array(3) ;
+    var i=0;
+    if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") result[i++] = "UTI";
+    if(this.c5=="1" ) result[i++] = "gonorrhoea";
+    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";
+    this.presentModal(result);
   }
 
 }

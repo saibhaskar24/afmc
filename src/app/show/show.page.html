@@ -1,10 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-button (click)="close()" slot="end">close</ion-button>
-    <ion-title>show</ion-title>
+    <ion-button color="light" (click)="close()" slot="end"><ion-icon name="close"></ion-icon></ion-button>
+    <ion-title>Result</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<p>{{data}}</p>
+<div>
+  <ul>
+    <li *ngFor="let r of data">{{r}}</li>
+  </ul>
+</div>
 </ion-content>
