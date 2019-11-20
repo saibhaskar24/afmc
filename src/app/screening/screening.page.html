@@ -195,94 +195,95 @@
       </ion-radio-group>
      
 
-     
         <h1>History related to symptoms</h1>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc1($event)" >
             <ion-list-header>
                 <ion-label>a. Do you have Pain or burning while passing urine  ?</ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc2($event)" >
             <ion-list-header>
                 <ion-label>b. Do you have an increased frequency of urination ?                </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc3($event)" >
             <ion-list-header>
                 <ion-label>c. Are you having fever ?                  </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc4($event)" >
             <ion-list-header>
                 <ion-label>d. Do you feel weak since onset of symptoms ?                  </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-        <ion-radio-group>
+        <ion-radio-group (ionChange)="cc5($event)">
         <ion-list-header>
             <ion-label>e. Is there any discharge from urethra ? Pus at the site of flow of urine              </ion-label>
           </ion-list-header>
       
           <ion-item>
             <ion-label>Yes</ion-label>
-            <ion-radio slot="start" value="biff"></ion-radio>
+            <ion-radio slot="start" value="1"></ion-radio>
           </ion-item>
       
           <ion-item>
             <ion-label>No</ion-label>
-            <ion-radio slot="start" value="griff"></ion-radio>
+            <ion-radio slot="start" value="0"></ion-radio>
           </ion-item>
         </ion-radio-group>
 
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc6($event)" >
             <ion-list-header>
                 <ion-label>f. How much is the quantity of discharge in a day ? </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>scanty or Just few drops</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>Copius discharge soiling the undergarments</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
+        
+    
         <ion-radio-group>
         <ion-list-header>
             <ion-label>g. What is the type of discharge ?        </ion-label>
@@ -380,7 +381,6 @@
           </ion-item>
         </ion-radio-group>
        
-
      
       <h1>Ulcer related questions (1ab follow up). Ulcer is a wound or break in the continuity of skin or mucous membrane.        </h1>
          <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">

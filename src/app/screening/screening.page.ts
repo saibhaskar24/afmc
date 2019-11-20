@@ -59,13 +59,13 @@ handler(event) {this.q1 = event.target.value; }
   bb3(event) {this.b3 = event.target.value; } //record
   bb4(event) {this.b4 = event.target.value; } //record,female
   bb5(event) {this.b5 = event.target.value; if(this.b5=="2") {alert("low risk of STD");} } //con
-  bb6(event) {this.b6 = event.target.value; if(this.b6=="yes"){this.bby6=true; }} //yes->input
-  bb7(event) {this.b7 = event.target.value; if(this.b7=="yes"){ alert("High risk"); }}
-  cc1(event) {this.c1 = event.target.value; if(this.c1=="yes"){  }}
-  cc2(event) {this.c2 = event.target.value; if(this.c2=="yes"){  }}
-  cc3(event) {this.c3 = event.target.value; if(this.c3=="yes"){  }}
-  cc4(event) {this.c4 = event.target.value; if(this.c4=="yes"){  }}
-  cc5(event) {this.c5 = event.target.value; if(this.c5=="yes"){  }}
+  bb6(event) {this.b6 = event.target.value; if(this.b6=="1"){this.bby6=true; }} //yes->input
+  bb7(event) {this.b7 = event.target.value; if(this.b7=="1"){ alert("High risk"); }} //sea
+  cc1(event) {this.c1 = event.target.value; } //a
+  cc2(event) {this.c2 = event.target.value; } //b
+  cc3(event) {this.c3 = event.target.value; } //c
+  cc4(event) {this.c4 = event.target.value; } //d
+  cc5(event) {this.c5 = event.target.value; } //e
   cc6(event) {this.c6 = event.target.value; if(this.c6=="yes"){  }}
   cc7(event) {this.c7 = event.target.value; if(this.c7=="4"){  }}
   cc8(event) {this.c8 = event.target.value; if(this.c8=="yes"){  }}
