@@ -14,66 +14,67 @@
        
       <h1>a) STI screening should start with following three questions regardless of clinical presentation   </h1>
       
-      <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+      <ion-radio-group  (ionChange)="aa1($event)" >
         <ion-list-header>
             <ion-label>Gender</ion-label>
           </ion-list-header>
         <ion-item>
             <ion-label>Male</ion-label>
-            <ion-radio slot="start" value="yes"></ion-radio>
+            <ion-radio slot="start" value="1"></ion-radio>
           </ion-item>
       
           <ion-item>
             <ion-label>female</ion-label>
-            <ion-radio slot="start" value="no"></ion-radio>
+            <ion-radio slot="start" value="2"></ion-radio>
           </ion-item>
     </ion-radio-group>
-      <ion-input [(ngModel)]="age" placeholder="Enter Age"></ion-input>
-       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+      <ion-input [(ngModel)]="age" placeholder="Enter Age">AGE : </ion-input>
+       <ion-radio-group  (ionChange)="aa2($event)" >
           <ion-list-header>
               <ion-label>1aa. Do you have any genital discharge? </ion-label>
             </ion-list-header>
           <ion-item>
               <ion-label>Yes</ion-label>
-              <ion-radio slot="start" value="yes"></ion-radio>
+              <ion-radio slot="start" value="1"></ion-radio>
             </ion-item>
         
             <ion-item>
               <ion-label>No</ion-label>
-              <ion-radio slot="start" value="no"></ion-radio>
+              <ion-radio slot="start" value="0"></ion-radio>
             </ion-item>
       </ion-radio-group>
-       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+       <ion-radio-group  (ionChange)="aa3($event)" >
           <ion-list-header>
               <ion-label>1 ab. Do you have any ulcer/ulcers on external genitalia ?   </ion-label>
             </ion-list-header>
           <ion-item>
               <ion-label>Yes</ion-label>
-              <ion-radio slot="start" value="yes"></ion-radio>
+              <ion-radio slot="start" value="1"></ion-radio>
             </ion-item>
         
             <ion-item>
               <ion-label>No</ion-label>
-              <ion-radio slot="start" value="no"></ion-radio>
+              <ion-radio slot="start" value="0"></ion-radio>
             </ion-item>
       </ion-radio-group>
-       <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+       <ion-radio-group  (ionChange)="aa4($event)" >
           <ion-list-header>
               <ion-label>1 ac. Has/have your partner(s) been treated for an STI in the last 8 weeks?   </ion-label>
             </ion-list-header>
           <ion-item>
               <ion-label>Yes</ion-label>
-              <ion-radio slot="start" value="yes"></ion-radio>
+              <ion-radio slot="start" value="1"></ion-radio>
             </ion-item>
         
             <ion-item>
               <ion-label>No</ion-label>
-              <ion-radio slot="start" value="no"></ion-radio>
+              <ion-radio slot="start" value="0"></ion-radio>
             </ion-item>
       </ion-radio-group>
+      <ion-button expand="block" (click)="next()">Next</ion-button>
      
       
-     
+     <div  *ngIf="aa">
       <h1>Sexual history to ascertain risk of getting STI: No risk/Low risk/High risk  </h1>
        <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
           <ion-list-header>
@@ -464,6 +465,8 @@
               </ion-item>
         
           </ion-radio-group>  
+        
+        </div>
   
        
 

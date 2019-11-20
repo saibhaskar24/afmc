@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./screening.page.scss'],
 })
 export class ScreeningPage  {
-  name;
   age;
   public q1: string;
   public a1: string;
-public a2: string;
+public aa: boolean = false;
 public a3: string;
 public a4: string;
 public a5: string;
@@ -43,11 +42,11 @@ handler(event) {this.q1 = event.target.value; }
   goFish(event) {
     console.log('hello ', event.target.value);
   }
-  aa1(event) {this.a1 = event.target.value; }
-  aa2(event) {this.a2 = event.target.value; }
-  aa3(event) {this.a3 = event.target.value;  if(this.a3=="yes"){  }}
-  aa4(event) {this.a4 = event.target.value; if(this.a4=="yes"){  }}
-  aa5(event) {this.a5 = event.target.value; if(this.a5=="yes"){  }}
+  aa1(event) {this.a1 = event.target.value; } //gender
+  aa3(event) {this.a3 = event.target.value; } //yes
+  aa4(event) {this.a4 = event.target.value; } //.
+  aa5(event) {this.a5 = event.target.value; } //.[1,0]
+  next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false;  alert("Thanks you dont have any problems");} }
   bb1(event) {this.b1 = event.target.value; if(this.b1=="yes"){  }}
   bb2(event) {this.b2 = event.target.value; if(this.b2=="1"){  }}
   bb3(event) {this.b3 = event.target.value; }
@@ -72,7 +71,7 @@ handler(event) {this.q1 = event.target.value; }
   dd2(event) {this.d2 = event.target.value; }
   dd3(event) {this.d3 = event.target.value; }
   submit() {
-    alert(this.name);
+    alert(this.age);
   }
 
 }
