@@ -16,8 +16,6 @@ public aa: boolean = false;
 public bb11: boolean = false;
 public g: boolean = false;
 public bby6: boolean = false;
-
-
 public a3: string;
 public a4: string;
 public a5: string;
