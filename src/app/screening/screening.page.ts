@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScreeningPage  {
   age;
+  antibiotic;
   public q1: string;
   public a1: string;
 public aa: boolean = false;
+public bb11: boolean = false;
+public g: boolean = false;
+public bby6: boolean = false;
+
+
 public a3: string;
 public a4: string;
 public a5: string;
@@ -42,19 +48,19 @@ handler(event) {this.q1 = event.target.value; }
   goFish(event) {
     console.log('hello ', event.target.value);
   }
-  aa1(event) {this.a1 = event.target.value; } //gender
+  aa1(event) {this.a1 = event.target.value; if(this.a1=="1") this.g=true; else this.g=false;} //gender
   aa3(event) {this.a3 = event.target.value; } //yes
   aa4(event) {this.a4 = event.target.value; } //.
   aa5(event) {this.a5 = event.target.value; } //.[1,0]
   next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false;  alert("Thanks you dont have any problems");} }
-  bb1(event) {this.b1 = event.target.value; if(this.b1=="yes"){  }}
-  bb2(event) {this.b2 = event.target.value; if(this.b2=="1"){  }}
-  bb3(event) {this.b3 = event.target.value; }
-  bb4(event) {this.b4 = event.target.value; }
-  bb5(event) {this.b5 = event.target.value; if(this.b5=="2"){  }}
-  bb6(event) {this.b6 = event.target.value; if(this.b6=="yes"){  //input
-  }}
-  bb7(event) {this.b7 = event.target.value; if(this.b7=="yes"){  }}
+  
+  bb1(event) {this.b1 = event.target.value; if(this.b1=="1") {this.bb11=true;} else {alert("Low risk of STD"); this.bb11=false;} } 
+  bb2(event) {this.b2 = event.target.value; if(this.b2=="1") { alert("Low risk of STD");} else {alert("High risk of STD"); }} 
+  bb3(event) {this.b3 = event.target.value; } //record
+  bb4(event) {this.b4 = event.target.value; } //record,female
+  bb5(event) {this.b5 = event.target.value; if(this.b5=="2") {alert("low risk of STD");} } //con
+  bb6(event) {this.b6 = event.target.value; if(this.b6=="yes"){this.bby6=true; }} //yes->input
+  bb7(event) {this.b7 = event.target.value; if(this.b7=="yes"){ alert("High risk"); }}
   cc1(event) {this.c1 = event.target.value; if(this.c1=="yes"){  }}
   cc2(event) {this.c2 = event.target.value; if(this.c2=="yes"){  }}
   cc3(event) {this.c3 = event.target.value; if(this.c3=="yes"){  }}
