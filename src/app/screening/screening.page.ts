@@ -61,18 +61,18 @@ handler(event) {this.q1 = event.target.value; }
   bb5(event) {this.b5 = event.target.value; if(this.b5=="2") {alert("low risk of STD");} } //con
   bb6(event) {this.b6 = event.target.value; if(this.b6=="1"){this.bby6=true; }} //yes->input
   bb7(event) {this.b7 = event.target.value; if(this.b7=="1"){ alert("High risk"); }} //sea
-  cc1(event) {this.c1 = event.target.value; } //a
-  cc2(event) {this.c2 = event.target.value; } //b
-  cc3(event) {this.c3 = event.target.value; } //c
-  cc4(event) {this.c4 = event.target.value; } //d
-  cc5(event) {this.c5 = event.target.value; } //e
-  cc6(event) {this.c6 = event.target.value; if(this.c6=="yes"){  }}
-  cc7(event) {this.c7 = event.target.value; if(this.c7=="4"){  }}
-  cc8(event) {this.c8 = event.target.value; if(this.c8=="yes"){  }}
-  cc9(event) {this.c9 = event.target.value; if(this.c9=="yes"){  }}
-  cc10(event) {this.c10 = event.target.value; if(this.c10=="yes"){  }}
-  cc11(event) {this.c11 = event.target.value; if(this.c11=="yes"){  }}
-  cc12(event) {this.c12 = event.target.value; if(this.c12=="yes"){  }}
+  cc1(event) {this.c1 = event.target.value; } //a -> yes reponse for a,b only with or without c,d,j,k indicates UTI
+  cc2(event) {this.c2 = event.target.value; } //b -> yes response to e with any response to f indicates gonorrhoea 
+  cc3(event) {this.c3 = event.target.value; } //c -> yes response to j and k indicates pelvic inflammatory disease
+  cc4(event) {this.c4 = event.target.value; } //d ->  A clear and watery discharge is perfectly normal
+  cc5(event) {this.c5 = event.target.value; } //e -> Clear and stretchy(mucoid) discharge indicates that you are likely ovulating
+  cc6(event) {this.c6 = event.target.value; } //f -> Thick white/curdy discharge of cottage cheese-like consistency accompanied with itching indicates yeast/candida infection
+  cc7(event) {this.c7 = event.target.value; if(this.c7=="4"){ alert("Thick yellowish to greenish foul smelling bubbly/frothy discharge indicates trichomoniasis")  }}
+  cc8(event) {this.c8 = event.target.value; } //h
+  cc9(event) {this.c9 = event.target.value; } //i
+  cc10(event) {this.c10 = event.target.value; } //j
+  cc11(event) {this.c11 = event.target.value; } //k
+  cc12(event) {this.c12 = event.target.value; } //l
   dd1(event) {this.d1 = event.target.value; }
   dd2(event) {this.d2 = event.target.value; }
   dd3(event) {this.d3 = event.target.value; }

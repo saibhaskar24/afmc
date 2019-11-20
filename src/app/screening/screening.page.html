@@ -284,7 +284,7 @@
         </ion-radio-group>
         
     
-        <ion-radio-group>
+        <ion-radio-group (ionChange)="cc7($event)">
         <ion-list-header>
             <ion-label>g. What is the type of discharge ?        </ion-label>
           </ion-list-header>
@@ -309,75 +309,75 @@
         </ion-radio-group>
 
 
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc8($event)">
             <ion-list-header>
                 <ion-label>h. Is the discharge foul smelling ? (Fishy smell)                  </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc9($event)">
             <ion-list-header>
                 <ion-label>i. Do you have vaginal itching            </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc10($event)">
             <ion-list-header>
                 <ion-label>j. Do you have a backache      </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-         <ion-radio-group  (ionChange)="handler($event)" (ionSelect)="goFish($event)">
+         <ion-radio-group  (ionChange)="cc11($event)">
             <ion-list-header>
                 <ion-label>k. Do you have pain in abdomen ?                  </ion-label>
               </ion-list-header>
             <ion-item>
                 <ion-label>Yes</ion-label>
-                <ion-radio slot="start" value="yes"></ion-radio>
+                <ion-radio slot="start" value="1"></ion-radio>
               </ion-item>
           
               <ion-item>
                 <ion-label>No</ion-label>
-                <ion-radio slot="start" value="no"></ion-radio>
+                <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-        <ion-radio-group>
+        <ion-radio-group (ionChange)="cc12($event)">
         <ion-list-header>
             <ion-label>l. Does your partner has similar kind of discharge       </ion-label>
           </ion-list-header>
       
           <ion-item>
             <ion-label>Yes</ion-label>
-            <ion-radio slot="start" value="biff"></ion-radio>
+            <ion-radio slot="start" value="1"></ion-radio>
           </ion-item>
       
           <ion-item>
             <ion-label>No</ion-label>
-            <ion-radio slot="start" value="griff"></ion-radio>
+            <ion-radio slot="start" value="0"></ion-radio>
           </ion-item>
         </ion-radio-group>
        
