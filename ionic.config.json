@@ -1,5 +1,7 @@
 {
   "name": "STIcare",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
