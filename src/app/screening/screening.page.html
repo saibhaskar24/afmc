@@ -114,21 +114,16 @@
             </ion-list-header>
           <ion-item>
               <ion-label>oral</ion-label>
-              <ion-radio slot="start" value="1"></ion-radio>
+              <ion-radio slot="start" value="oral"></ion-radio>
             </ion-item>
         
             <ion-item>
               <ion-label>vaginal</ion-label>
-              <ion-radio slot="start" value="2"></ion-radio>
+              <ion-radio slot="start" value="vaginal"></ion-radio>
             </ion-item>
             <ion-item>
-                <ion-label>anal</ion-label>
-                <ion-radio slot="start" value="3"></ion-radio>
-              </ion-item>
-          
-              <ion-item>
-                <ion-label>sex</ion-label>
-                <ion-radio slot="start" value="4"></ion-radio>
+                <ion-label>anal sex</ion-label>
+                <ion-radio slot="start" value="anal sex"></ion-radio>
               </ion-item>
       </ion-radio-group>
        <ion-radio-group  (ionChange)="bb4($event)" *ngIf=!g>
@@ -137,12 +132,12 @@
             </ion-list-header>
           <ion-item>
               <ion-label>Yes</ion-label>
-              <ion-radio slot="start" value="1"></ion-radio>
+              <ion-radio slot="start" value="Yes"></ion-radio>
             </ion-item>
         
             <ion-item>
               <ion-label>No</ion-label>
-              <ion-radio slot="start" value="0"></ion-radio>
+              <ion-radio slot="start" value="No"></ion-radio>
             </ion-item>
       </ion-radio-group>
        <ion-radio-group  (ionChange)="bb5($event)" >
@@ -169,11 +164,11 @@
             </ion-list-header>
           <ion-item>
               <ion-label>Yes</ion-label>
-              <ion-radio slot="start" value="yes"></ion-radio>
+              <ion-radio slot="start" value="1"></ion-radio>
             </ion-item>
             <ion-input [(ngModel)]="antibiotic" *ngIf=bby6 placeholder="Enter name of antibiotic">Antibiotic :</ion-input>
             <ion-item>
-              <ion-label>No</ion-label>
+              <ion-label>2</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
       </ion-radio-group>   

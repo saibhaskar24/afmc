@@ -104,6 +104,12 @@ public e: string;
     if(this.g)     result[i++] = "Gender : "+"Male";
     else      result[i++] = "Gender : "+"Female";
     result[i++] = "Age : "+this.age;
+    result[i++] = "Sexual orientation : "+this.b3;
+    if(!this.g) {
+      result[i++] = "the possibility of pregnancy (females): "+this.b4;
+    }
+    if(this.bby6)     result[i++] = "recent antibiotic history and drug allergy  : "+this.antibiotic;
+
 
 
     var i=0;
