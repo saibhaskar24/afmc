@@ -102,6 +102,7 @@ public e: string;
   ee(event) {this.e = event.target.value; } 
   submit() {
     var result:string[] = new Array(9) ;
+    var i=0;
     if(this.g)     result[i++] = "Gender : "+"Male";
     else      result[i++] = "Gender : "+"Female";
     result[i++] = "Age : "+this.age;
@@ -110,10 +111,6 @@ public e: string;
       result[i++] = "the possibility of pregnancy (females): "+this.b4;
     }
     if(this.bby6)     result[i++] = "recent antibiotic history and drug allergy  : "+this.antibiotic;
-
-
-
-    var i=0;
     if(this.aaa1)     {
     if(this.c7=="1" ) result[i++] = " A clear and watery discharge is perfectly normal";
     if(this.c7=="2" ) result[i++] = " Clear and stretchy(mucoid) discharge indicates that you are likely ovulating";

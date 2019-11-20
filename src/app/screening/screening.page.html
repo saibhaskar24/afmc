@@ -168,7 +168,7 @@
             </ion-item>
             <ion-input [(ngModel)]="antibiotic" *ngIf=bby6 placeholder="Enter name of antibiotic">Antibiotic :</ion-input>
             <ion-item>
-              <ion-label>2</ion-label>
+              <ion-label>No</ion-label>
               <ion-radio slot="start" value="no"></ion-radio>
             </ion-item>
       </ion-radio-group>   
@@ -276,7 +276,7 @@
                 <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
-        <div *ngIf!="g">
+        <div *ngIf=!g>
         <ion-radio-group (ionChange)="cc7($event)">
         <ion-list-header>
             <ion-label>g. What is the type of discharge ?        </ion-label>
@@ -446,9 +446,10 @@
               </ion-item>
         
           </ion-radio-group>  
-        
-          <ion-button expand="block" (click)="submit()">Submit</ion-button>
         </div>
+      </div>
+      
+      <ion-button expand="block" (click)="submit()">Submit</ion-button>
       </div>
 
     </ion-list>
