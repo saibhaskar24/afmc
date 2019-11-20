@@ -192,8 +192,9 @@
           <ion-radio slot="start" value="0"></ion-radio>
         </ion-item>
       </ion-radio-group>
-     
 
+    <div *ngIf="aaa1">
+      
         <h1>History related to symptoms</h1>
          <ion-radio-group  (ionChange)="cc1($event)" >
             <ion-list-header>
@@ -280,6 +281,7 @@
                 <ion-radio slot="start" value="0"></ion-radio>
               </ion-item>
         </ion-radio-group>
+        <div *ngIf!="g">
         <ion-radio-group (ionChange)="cc7($event)">
         <ion-list-header>
             <ion-label>g. What is the type of discharge ?        </ion-label>
@@ -375,7 +377,11 @@
           </ion-item>
         </ion-radio-group>
        
-     
+      </div>
+
+    </div>
+
+     <div *ngIf="bbb1">
       <h1>Ulcer related questions (1ab follow up). Ulcer is a wound or break in the continuity of skin or mucous membrane.        </h1>
          <ion-radio-group  (ionChange)="dd1($event)" >
             <ion-list-header>
@@ -420,9 +426,9 @@
               </ion-item>
         </ion-radio-group>
 
-     
+     </div>
 
-     
+     <div *ngIf="ccc1">
         <h1>Photo quiz for ulcer          </h1>
         <ion-radio-group  (ionChange)="ee($event)">
             <ion-list-header>

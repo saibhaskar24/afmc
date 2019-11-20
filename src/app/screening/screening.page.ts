@@ -14,6 +14,9 @@ export class ScreeningPage  {
   public q1: string;
   public a1: string;
 public aa: boolean = false;
+public aaa1: boolean = false;
+public bbb1: boolean = false;
+public ccc1: boolean = false;
 public bb11: boolean = false;
 public g: boolean = false;
 public bby6: boolean = false;
@@ -68,9 +71,9 @@ public e: string;
   }
 
   aa1(event) {this.a1 = event.target.value; if(this.a1=="1") this.g=true; else this.g=false;} //gender
-  aa2(event) {this.a3 = event.target.value; } //yes
-  aa3(event) {this.a4 = event.target.value; } //.
-  aa4(event) {this.a5 = event.target.value; } //.[1,0]
+  aa2(event) {this.a3 = event.target.value; if(this.a3=="1") {this.aaa1=true;}} //yes
+  aa3(event) {this.a4 = event.target.value; if(this.a4=="1") this.bbb1=true;} //.
+  aa4(event) {this.a5 = event.target.value; if(this.a5=="1") this.ccc1=true;} //.[1,0]
   next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false; this.presentAlert("Thanks you dont have any problems");} }
 
   bb1(event) {this.b1 = event.target.value; if(this.b1=="1") {this.bb11=true;} else {this.presentAlert("Low risk of STD"); this.bb11=false;} } 
