@@ -118,7 +118,12 @@ public e: string;
     if(this.c7=="4" ) result[i++] = " Thick yellowish to greenish foul smelling bubbly/frothy discharge indicates trichomoniasis";
     if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") result[i++] = "UTI";
     if(this.c5=="1" && (this.c6=="1" || this.c6=="0")) result[i++] = "gonorrhoea";
-    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";}
+    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";
+    if(this.c8=="1") result[i++]="Trichomoniasis    ";
+    if(this.c9=="1") result[i++]=" Candidiasis    ";
+    if(this.c10=="1" || this.c11=="1") result[i++]="Pelvic inflammatory Disease    ";
+    if(this.c12=="1") result[i++]=" Treatment of partner is also required    ";
+  }
 
     if(this.bbb1) {
       result[i++]=" Common causes of Genital Ulcer: treponema pallidum, H. ducreyi, Herpes Simplex infection";
