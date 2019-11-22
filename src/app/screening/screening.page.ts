@@ -77,19 +77,19 @@ public e: string;
   next() {if(this.a3 == "1" || this.a4 == "1" || this.a5=="1") {this.aa=true;} else {this.aa=false; this.presentAlert("Thanks you dont have any problems");} }
 
   bb1(event) {this.b1 = event.target.value; if(this.b1=="1") {this.bb11=true;} else {this.presentAlert("Low risk of STD"); this.bb11=false;} } 
-  bb2(event) {this.b2 = event.target.value; if(this.b2=="1") { this.presentAlert("Low risk of STD");} else {this.presentAlert("High risk of STD"); }} 
+  bb2(event) {this.b2 = event.target.value; } 
   bb3(event) {this.b3 = event.target.value; } //record
   bb4(event) {this.b4 = event.target.value; } //record,female
-  bb5(event) {this.b5 = event.target.value; if(this.b5=="2") {this.presentAlert("low risk of STD");} } //con
+  bb5(event) {this.b5 = event.target.value;  } //con
   bb6(event) {this.b6 = event.target.value; if(this.b6=="1"){this.bby6=true; }} //yes->input
-  bb7(event) {this.b7 = event.target.value; if(this.b7=="1"){ this.presentAlert("High risk"); }} //sea
+  bb7(event) {this.b7 = event.target.value; } //sea
   cc1(event) {this.c1 = event.target.value; } //a -> yes reponse for a,b only with or without c,d,j,k indicates UTI
   cc2(event) {this.c2 = event.target.value; } //b -> yes response to e with any response to f indicates gonorrhoea 
   cc3(event) {this.c3 = event.target.value; } //c -> yes response to j and k indicates pelvic inflammatory disease
   cc4(event) {this.c4 = event.target.value; } //d ->  A clear and watery discharge is perfectly normal
   cc5(event) {this.c5 = event.target.value; } //e -> Clear and stretchy(mucoid) discharge indicates that you are likely ovulating
   cc6(event) {this.c6 = event.target.value; } //f -> Thick white/curdy discharge of cottage cheese-like consistency accompanied with itching indicates yeast/candida infection
-  cc7(event) {this.c7 = event.target.value; if(this.c7=="4"){ this.presentAlert("Thick yellowish to greenish foul smelling bubbly/frothy discharge indicates trichomoniasis")  }}
+  cc7(event) {this.c7 = event.target.value;  }
   cc8(event) {this.c8 = event.target.value; } //h
   cc9(event) {this.c9 = event.target.value; } //i
   cc10(event) {this.c10 = event.target.value; } //j
@@ -110,6 +110,9 @@ public e: string;
     if(!this.g) {
       result[i++] = "the possibility of pregnancy (females): "+this.b4;
     }
+    var a = 0;
+    if(this.b7=="1" || this.b2=="2" || this.b2=="3") { result[i++] ="High risk of STD"; a=1; }
+    if(a!=0 && (this.b5=="2" || this.b2=="1")) {result[i++] ="low risk of STD";}
     if(this.bby6)     result[i++] = "recent antibiotic history and drug allergy  : "+this.antibiotic;
     if(this.aaa1)     {
     if(this.c7=="1" ) result[i++] = " A clear and watery discharge is perfectly normal";
