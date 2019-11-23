@@ -108,20 +108,20 @@ public e: string;
     result[i++] = "Age : "+this.age;
     result[i++] = "Sexual orientation : "+this.b3;
     if(!this.g) {
-      result[i++] = "the possibility of pregnancy (females): "+this.b4;
+      result[i++] = "The possibility of pregnancy (females): "+this.b4;
     }
     var a = 0;
     if(this.b7=="1" || this.b2=="2" || this.b2=="3") { result[i++] ="High risk of STD"; a=1; }
-    if(a!=0 && (this.b5=="2" || this.b2=="1")) {result[i++] ="low risk of STD";}
-    if(this.bby6)     result[i++] = "recent antibiotic history and drug allergy  : "+this.antibiotic;
+    if(a!=0 && (this.b5=="2" || this.b2=="1")) {result[i++] ="Low risk of STD";}
+    if(this.bby6)     result[i++] = "Recent antibiotic history and drug allergy  : "+this.antibiotic;
     if(this.aaa1)     {
     if(this.c7=="1" ) result[i++] = " A clear and watery discharge is perfectly normal";
     if(this.c7=="2" ) result[i++] = " Clear and stretchy(mucoid) discharge indicates that you are likely ovulating";
     if(this.c7=="3" ) result[i++] = " Thick white/curdy discharge of cottage cheese-like consistency accompanied with itching indicates yeast/candida infection";
     if(this.c7=="4" ) result[i++] = " Thick yellowish to greenish foul smelling bubbly/frothy discharge indicates trichomoniasis";
     if(this.c1=="1" && this.c2=="1" && this.c3=="0"&&this.c4=="0" &&this.c10=="0" && this.c11=="0") result[i++] = "UTI";
-    if(this.c5=="1" && (this.c6=="1" || this.c6=="0")) result[i++] = "gonorrhoea";
-    if(this.c10=="1" && this.c11=="1") result[i++]="pelvic inflammatory disease";
+    if(this.c5=="1" && (this.c6=="1" || this.c6=="0")) result[i++] = "Gonorrhoea";
+    if(this.c10=="1" && this.c11=="1") result[i++]="Pelvic inflammatory disease";
     if(!this.g){if(this.c8=="1") result[i++]="Trichomoniasis    ";
     if(this.c9=="1") result[i++]=" Candidiasis    ";
     if(this.c10=="1" || this.c11=="1") result[i++]="Pelvic inflammatory Disease    ";
@@ -142,9 +142,9 @@ public e: string;
     }
 
     if(this.ccc1) {
-      if(this.e=="1")  result[i++]=" a. syphilitic ulcer   ";
-      if(this.e=="2")  result[i++]=" b. chancroid  ";
-      if(this.e=="3")  result[i++]=" c. Herpetic ulcer      ";          
+      if(this.e=="1")  result[i++]=" Syphilitic ulcer   ";
+      if(this.e=="2")  result[i++]=" Chancroid  ";
+      if(this.e=="3")  result[i++]="  Herpetic ulcer      ";          
     }
     this.presentModal(result);
   }
